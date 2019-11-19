@@ -1069,7 +1069,7 @@
 	var ver = {
 		release: 0,
 		major: 0,
-		minor: 4
+		minor: 5
 	};
 
 	var version = ver.release + '.' + ver.major + '.' + ver.minor;
