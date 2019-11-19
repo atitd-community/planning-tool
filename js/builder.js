@@ -210,7 +210,6 @@
 			id: "other2Cat",
 			buildings: [
 				{ id: "bldHexaTablet" },
-				{ id: "bldImpBR" },
 				{ id: "bldIncenseBurner" },
 				{ id: "bldMint" },
 				{ id: "bldPaperPress" },
@@ -218,6 +217,12 @@
 				{ id: "bldScentLab" },
 				{ id: "bldToxinKitchen" },
 				{ id: "bldWTT" }
+			]
+		}, {
+			name: "Outside",
+			id: "outsideCat",
+			buildings: [
+				{ id: "bldImpBR" }
 			]
 	}];
 
@@ -449,7 +454,7 @@
 		name: "Barrel Grinder",
 		id: "bldBarrelGrinder",
 		width: 11,
-		height: 19,
+		height: 20,
 		colour: "#bf9900",
 		t9: 0
 	}, {
@@ -469,8 +474,8 @@
 	}, {
 		name: "Blast Furnace",
 		id: "bldBlastFurnace",
-		width: 9,
-		height: 12,
+		width: 11,
+		height: 13,
 		colour: "#f2e63d",
 		t9: 0
 	}, {
@@ -483,8 +488,8 @@
 	}, {
 		name: "Ceremonial Tasting Table",
 		id: "bldTastingTable",
-		width: 13,
-		height: 6,
+		width: 11,
+		height: 5,
 		colour: "#3b4000",
 		t9: 0
 	}, {
@@ -504,8 +509,8 @@
 	}, {
 		name: "Clinker Vat",
 		id: "bldClinkerVat",
-		width: 21,
-		height: 21,
+		width: 13,
+		height: 13,
 		colour: "#b8e600",
 		t9: 0
 	}, {
@@ -553,15 +558,15 @@
 	}, {
 		name: "Grain Oven",
 		id: "bldGrainOven",
-		width: 7,
-		height: 7,
+		width: 9,
+		height: 9,
 		colour: "#1d4010",
 		t9: 0
 	}, {
 		name: "Gyration Cell",
 		id: "bldGyroCell",
 		width: 7,
-		height: 8,
+		height: 7,
 		colour: "#3aa629",
 		t9: 0
 	}, {
@@ -651,7 +656,7 @@
 	}, {
 		name: "Pottery Deck",
 		id: "bldPotteryDeck",
-		width: 20,
+		width: 21,
 		height: 21,
 		colour: "#33cc99",
 		t9: 0
@@ -665,7 +670,7 @@
 	}, {
 		name: "Reactory",
 		id: "bldReactory",
-		width: 17,
+		width: 18,
 		height: 17,
 		colour: "#134d41",
 		t9: 0
@@ -728,7 +733,7 @@
 	}, {
 		name: "Steam Kiln",
 		id: "bldSteamKiln",
-		width: 16,
+		width: 14,
 		height: 13,
 		colour: "#66b8cc",
 		t9: 0
@@ -749,8 +754,8 @@
 	}, {
 		name: "Trophy Case",
 		id: "bldTrophyCase",
-		width: 3,
-		height: 5,
+		width: 5,
+		height: 7,
 		colour: "#06131a",
 		t9: 0
 	}, {
@@ -770,8 +775,8 @@
 	}, {
 		name: "Wood Treatment Tank",
 		id: "bldWTT",
-		width: 25,
-		height: 34,
+		width: 20,
+		height: 32,
 		colour: "#bfe1ff",
 		t9: 0
 	}];
