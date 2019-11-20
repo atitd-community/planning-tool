@@ -106,7 +106,8 @@
 				{ id: "bldHandLoom" },
 				{ id: "bldHacklingRake" },
 				{ id: "bldImpHR" },
-				{ id: "bldSteamDistaff" }
+				{ id: "bldSteamDistaff" },
+				{ id: "bldLrgDistaff" }
 			]
 		}, {
 			name: "Farming",
@@ -158,6 +159,7 @@
 				{ id: "bldChest" },
 				{ id: "bldHugeChest" },
 				{ id: "bldBeetleLocker" },
+				{ id: "bldStorBarrel" },
 				{ id: "bldTrophyCase" }
 			]
 		}, {
@@ -188,6 +190,10 @@
 			name: "Trade",
 			id: "tradeCat",
 			buildings: [
+				{ id: "bldLrgCorner" },
+				{ id: "bldLrgCenter" },
+				{ id: "bldSmlBridge1" },
+				{ id: "bldSmlBridge2" },
 				{ id: "bldSmShopCentre" },
 				{ id: "bldSmShopCorner" }
 			]
@@ -222,7 +228,15 @@
 			name: "Outside",
 			id: "outsideCat",
 			buildings: [
-				{ id: "bldImpBR" }
+				{ id: "bldBeerKettle" },
+				{ id: "bldChurn" },
+				{ id: "bldCreamery" },
+				{ id: "bldDryRack" },
+				{ id: "bldFlaxHmk" },
+				{ id: "bldImpBR" },
+				{ id: "bldStorBarrel" },
+				{ id: "bldWarehouse" },
+				{ id: "bldWoodPlane" }
 			]
 	}];
 
@@ -779,6 +793,97 @@
 		height: 32,
 		colour: "#bfe1ff",
 		t9: 0
+	}, {
+		name: "Large Distaff",
+		id: "bldLrgDistaff",
+		width: 15,
+		height: 24,
+		colour: "#ccc566",
+		t9: 1
+	}, {
+		name: "Large Corner",
+		id: "bldLrgCorner",
+		width: 5,
+		height: 5,
+		colour: "#f2e63d",
+		t9: 1
+	}, {
+		name: "Large Center",
+		id: "bldLrgCenter",
+		width: 3,
+		height: 5,
+		colour: "#736739",
+		t9: 1
+	}, {
+		name: "Small Bridge 1",
+		id: "bldSmlBridge1",
+		width: 3,
+		height: 3,
+		colour: "#bf9900",
+		t9: 1
+	}, {
+		name: "Small Bridge 2",
+		id: "bldSmlBridge2",
+		width: 3,
+		height: 3,
+		colour: "#998c73",
+		t9: 1
+	}, {
+		name: "Beer Kettle",
+		id: "bldBeerKettle",
+		width: 5,
+		height: 4,
+		colour: "#808080",
+		t9: 1
+	}, {
+		name: "Butter Churn",
+		id: "bldChurn",
+		width: 3,
+		height: 3,
+		colour: "#3aa629",
+		t9: 1
+	}, {
+		name: "Creamery",
+		id: "bldCreamery",
+		width: 9,
+		height: 14,
+		colour: "#134d41",
+		t9: 1
+	}, {
+		name: "Drying Rack",
+		id: "bldDryRack",
+		width: 3,
+		height: 5,
+		colour: "#a3a67c",
+		t9: 1
+	}, {
+		name: "Flax Hammock",
+		id: "bldFlaxHmk",
+		width: 9,
+		height: 9,
+		colour: "#a3d9aa",
+		t9: 1
+	}, {
+		name: "Storage Barrel",
+		id: "bldStorBarrel",
+		width: 5,
+		height: 5,
+		colour: "#4c1f00",
+		t9: 1
+	}, {
+		name: "Warehouse",
+		id: "bldWarehouse",
+		width: 15,
+		height: 17,
+		colour: "#0a2624",
+		t9: 1
+	}, {
+		name: "Wood Plane",
+		id: "bldWoodPlane",
+		width: 5,
+		height: 10,
+		colour: "#6a8040",
+		t9: 1
 	}];
 
 	var buildingCosts = [{
