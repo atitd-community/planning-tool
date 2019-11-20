@@ -207,14 +207,15 @@
 				{ id: "bldBarrelGrinder" },
 				{ id: "bldTastingTable" },
 				{ id: "bldChemBath" },
+				{ id: "bldChemLab" },
 				{ id: "bldFleetFurnace" },
-				{ id: "bldGearboxTable" },
-				{ id: "bldGemTable" }
+				{ id: "bldGearboxTable" }
 			]
 		}, {
 			name: "Other 2",
 			id: "other2Cat",
-			buildings: [
+			buildings: [,
+				{ id: "bldGemTable" },
 				{ id: "bldHexaTablet" },
 				{ id: "bldIncenseBurner" },
 				{ id: "bldMint" },
