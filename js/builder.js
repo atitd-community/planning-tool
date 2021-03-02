@@ -85,7 +85,8 @@
 			id: "cookingCat",
 			buildings: [
 				{ id: "bldKitchen" },
-				{ id: "bldKettle" }
+				{ id: "bldKettle" },
+				{ id: "bldAlembic" }
 			]
 		}, {
 			name: "Cooperage",
@@ -170,6 +171,7 @@
 			buildings: [
 				{ id: "bldCcHearth" },
 				{ id: "bldCcOven" },
+				{  id: "bldCcBrazier" },
 				{ id: "bldCrematory" }
 			]
 		}, {
@@ -211,7 +213,9 @@
 				{ id: "bldChemBath" },
 				{ id: "bldChemLab" },
 				{ id: "bldFleetFurnace" },
-				{ id: "bldGearboxTable" }
+				{ id: "bldGearboxTable" },
+				{ id: "bldAcousticLab" }
+				
 			]
 		}, {
 			name: "Other 2",
@@ -225,7 +229,8 @@
 				{ id: "bldPigmentLab" },
 				{ id: "bldScentLab" },
 				{ id: "bldToxinKitchen" },
-				{ id: "bldWTT" }
+				{ id: "bldWTT" },
+				{ id: "bldMutagenics" },
 			]
 		}, {
 			name: "Outside",
@@ -249,6 +254,20 @@
 		width: 3,
 		height: 3,
 		colour: "#730000",
+		t9: 1
+	}, {
+		name: "Acoustics Labratory",
+		id: "bldAcousticLab",
+		width: 14,
+		height: 26,
+		colour: "#539451",
+		t9: 1
+	}, {
+		name: "Mutagenics Labratory",
+		id: "bldMutagenics",
+		width: 11,
+		height: 12,
+		colour: "#539451",
 		t9: 1
 	}, {
 		name: "Automatic Sawmill",
@@ -326,6 +345,13 @@
 		width: 19,
 		height: 9,
 		colour: "#cc5c33",
+		t9: 1
+	}, {
+		name: "Charcoal Brazier",
+		id: "bldCcBrazier",
+		width: 29,
+		height: 11,
+		colour: "#c68322",
 		t9: 1
 	}, {
 		name: "Charcoal Oven",
@@ -1409,7 +1435,7 @@
 			kilnconstruction: 0
 		},
 		materials: {
-			brick: 36
+			bricks: 36
 		}
 	}, {
 		id: "bldPotteryDeck",
@@ -1504,6 +1530,616 @@
 		materials: {
 			ironpot: 1,
 			sheetingCopper: 4
+		}
+	}, {
+		id: "bldClinkerVat",
+		skills: {
+			masonry: 3
+		},
+		materials: {
+			coppersheeting: 10,
+			cutStone: 60,
+			firebricks: 2500
+		}
+	}, {
+		id: "bldSteamRockSaw",
+		skills: {
+			steamMechanics: 3
+		},
+		materials: {
+			brassSmallGear: 49,
+			cement: 100,
+			claybricks: 500,
+			concrete: 500,
+			firebricks: 1000,
+			random3outputGearbox: 1,
+			highPressureSteamEngine: 1,
+			ironLargeGear: 1,
+			ironMediumGears: 7,
+			lubricatingOil: 15,
+			steelBars: 49,
+			hardRigidFireproofBoards: 1000,
+			water: 250
+		}
+	}, {
+		id: "bldBox",
+		materials: {
+			boards: 24
+		}
+	}, {
+		id: "bldChest",
+		materials: {
+			boards: 48,
+			bricks: 400
+		}
+	}, {
+		id: "bldHugeChest",
+		skills: {
+			storageImprovements: 1
+		},
+		materials: {
+			boards: 96,
+			bricks: 600,
+			ironStrap: 2
+		}
+	}, {
+		id: "bldBeetleLocker",
+		skills: {
+			testKhefresChildren: 1
+		},
+		materials: {
+			boards: 50,
+			bricks: 100,
+			slate: 20
+		}
+	}, {
+		id: "bldStorBarrel",
+		materials: {
+			barrelTap: 1,
+			boards: 20,
+			copperStrap: 2,
+			nails: 10,
+			smallBarrels: 1,
+			tinSheeting: 2
+		}
+	}, {
+		id: "bldTrophyCase",
+		skills: {
+			testArcheologist: 1
+		},
+		materials: {
+			bearings: 20,
+			boards: 20,
+			mediumDiamond: 2,
+			mediumSapphire: 2,
+			goldFoil: 20,
+			mirror: 1,
+			spindleTreeResin: 2,
+			silkCloth: 2
+		}
+	}, {
+		id: "bldCrematory",
+		skills: {
+			chemistry: 2
+		},
+		materials: {
+			greyishRaeliTiles: 210,
+			brass: 14,
+			concrete: 80,
+			smallQuartz: 400,
+			sunSteel: 4,
+			thermometer: 7
+		}
+	}, {
+		id: "bldCcBrazier",
+		skills: {
+			pyrolysis: 4
+		},
+		materials: {
+			firebricks: 6000,
+			powderedQuartz: 4000,
+			leather: 500,
+			pinchRollers: 8,
+			glassRods: 400,
+			thermometer: 4,
+			insulativeStainlessHardCobaltPlatedPurity7SteelSheeting: 12,
+			barometer7000: 1
+		}
+	}, {
+		id: "bldAnvil",
+		skills: {
+			blacksmithing: 2
+		},
+		materials: {
+			anvilBed: 1,
+			firebricks: 120,
+			water: 4
+		}
+	}, {
+		id: "bldBlastFurnace",
+		skills: {
+			mining: 2
+		},
+		materials: {
+			boards: 100,
+			clay:  20,
+			concrete: 100,
+			crucible: 6,
+			glassPipe: 10,
+			leather: 50,
+			pulley: 5,
+			steelSheeting: 100
+		}
+	}, {
+		id: "bldBulletFurnace",
+		skills: {
+			mining: 2
+		},
+		materials: {
+			crucible: 1,
+			firebricks: 50
+		}
+	}, {
+		id: "bldCompFurnace",
+		skills: {
+			mining: 2
+		},
+		materials: {
+			clay: 100,
+			crucible: 3,
+			firebricks: 200,
+			ironbar: 5
+		}
+	}, {
+		id: "bldGyroCell",
+		skills: {
+			mining: 3
+		},
+		materials: {
+			boards: 1000,
+			clay: 500,
+			concrete: 250,
+			coppersheeting: 50,
+			crucible: 12,
+			glassPipe: 20,
+			leather: 100,
+			moonSteel: 50,
+			pulley:  10,
+			tinSheeting: 25
+		}
+	}, {
+		id: "bldReactory",
+		skills: {
+			metallurgy: 1
+		},
+		materials: {
+			cutStone: 12,
+			firebricks: 240,
+			ironpot: 1,
+			leather: 20,
+			smallTopaz: 10
+		}
+	}, {
+		id: "bldRecyclingSmeltery",
+		skills: {
+			salvageTechniques: 4
+		},
+		materials: {
+			claySteepWoolCloth: 10,
+			crucible: 1,
+			firebricks: 300,
+			steelStrap: 4
+		}
+	}, {
+		id: "bldLrgCorner",
+		skills: {
+			trade: 1
+		},
+		materials: {
+			nontoxicFireproffBoards: 50,
+			nails: 10
+		}
+	}, {
+		id: "bldLrgCenter",
+		skills: {
+			trade: 1
+		},
+		materials: {
+			nontoxicFireproffBoards: 50,
+			nails: 10
+		}
+	}, {
+		id: "bldSmShopCentre",
+		skills: {
+			trade: 1
+		},
+		materials: {
+			boards: 45,
+			nails: 14
+		}
+	}, {
+		id: "bldSmShopCorner",
+		skills: {
+			trade: 1
+		},
+		materials: {
+			boards: 30,
+			nails: 10
+		}
+	}, {
+		id: "bldSmlBridge1",
+		skills: {
+			trade: 1
+		},
+		materials: {
+			nontoxicFireproffBoards: 50,
+			nails: 10
+		}
+	}, {
+		id: "bldSmlBridge2",
+		skills: {
+			trade: 1
+		},
+		materials: {
+			nontoxicFireproffBoards: 50,
+			nails: 10
+		}
+	}, {
+		id: "bldAcidBath",
+		skills: {
+			neutralization: 1
+		},
+		materials: {
+			canvas: 4,
+			oysterShellMarble: 1
+		}
+	}, {
+		id: "bldGrainOven",
+		skills: {
+			farming: 2
+		},
+		materials: {
+			copperwire: 45,
+			firebricks: 120,
+			slate: 40
+		}
+	}, {
+		id: "bldAlembic",
+		skills: {
+			distillation: 1
+		},
+		materials: {
+			coppersheeting: 6,
+			glassJars:15,
+			goldWire: 25,
+			brassSmallGear: 2,
+			thermometer: 1
+		}
+	}, {
+		id: "bldAlchBench",
+		skills: {
+			alchemy: 1
+		},
+		materials: {
+			glassJars: 7,
+			ironpot: 1,
+			papyrusPaper: 12
+		}
+	}, {
+		id: "bldAssimBath",
+		skills: {
+			alchemicalMaceration: 1
+		},
+		materials: {
+			copperStrap: 3,
+			glassPipe: 10,
+			silver: 25,
+			thermometer: 1
+		}
+	}, {
+		id: "bldBarrelGrinder",
+		skills: {
+			chemistry: 1,
+			mortarConstruction: 1
+		},
+		materials: {
+			bearings: 120,
+			boards: 3200,
+			leather: 600,
+			oil: 4000,
+			smallQuartz: 1000,
+			steelCable: 20
+		}
+	}, {
+		id: "bldTastingTable",
+		skills: {
+			carpentry: 3
+		},
+		materials: {
+			boards: 20,
+			oysterShellMarble: 6
+		}
+	}, {
+		id: "bldChemBath",
+		skills: {
+			metalTreatment: 1
+		},
+		materials: {
+			hardRotproofFireProofBoards: 300,
+			distillationCoil7500: 2,
+			fineGlassPipe: 20,
+			nails: 200,
+			bolt:  40,
+			washer: 80,
+			steelSheeting: 20,
+			ironbar: 20,
+			canvas: 100,
+			tar: 10,
+			copperPipe: 50,
+			thermometer: 2
+		}
+	}, {
+		id: "bldChemLab",
+		skills: {
+			chemistry: 0
+		},
+		materials: {
+			boards: 900,
+			claymortars: 1,
+			coppersheeting: 5,
+			glassJars: 50,
+			glassRods: 20,
+			nails: 214,
+			rope: 19,
+			woodenPeg: 10,
+			woodenPestle: 1
+		}
+	}, {
+		id: "bldFleetFurnace",
+		skills: {
+			chemistry: 1
+		},
+		materials: {
+			cutStone: 30,
+			firebricks: 600,
+			ironpot: 1,
+			leather: 60,
+			smallDiamond: 40,
+			smallQuartz: 40
+		}
+	}, {
+		id: "bldGearboxTable",
+		materials: {
+			boards: 280,
+			nails: 56
+		}
+	}, {
+		id: "bldGemTable",
+		skills: {
+			lapidary: 0
+		},
+		materials: {
+			cutStone: 3,
+			rope: 30,
+			brassSmallGear: 6,
+			steelWire: 12,
+			whiteSand: 6
+		}
+	}, {
+		id: "bldIncenseBurner",
+		skills: {
+			aromatics: 1
+		},
+		materials: {
+			glassRods: 3,
+			largeQuartz: 1,
+			silver: 3
+		}
+	}, {
+		id: "bldMint",
+		skills: {
+			minting: 1,
+			printing: 1,
+		},
+		materials: {
+			bearings: 80,
+			boards: 400,
+			bricks: 800,
+			cutStone: 300,
+			extrusionPlate: 1,
+			goldWire: 100,
+			pinchRollers: 1
+		}
+	}, {
+		id: "bldPaperPress",
+		skills: {
+			PaperFabrication: 1
+		},
+		materials: {
+			cutStone: 40,
+			ironMediumGears: 4,
+			oil: 200,
+			pinchRollers: 1
+		}
+	}, {
+		id: "bldPigmentLab",
+		skills: {
+			scienceOfColor: 1
+		},
+		materials: {
+			coppersheeting: 12,
+			fineGlassRod: 6,
+			glassJars: 30
+		}
+	}, {
+		id: "bldScentLab",
+		skills: {
+			aromatics: 1
+		},
+		materials: {
+			brassPot: 1,
+			copperStrap: 12,
+			cutStone: 80,
+			firebricks: 2400,
+			tar: 15
+		}
+	}, {
+		id: "bldToxinKitchen",
+		skills: {
+			crossBreeding: 1,
+			fungiculture: 1
+		},
+		materials: {
+			bricks: 2500,
+			firebricks: 1000,
+			glassJars: 30,
+			goldWire: 50,
+			mediumSapphire: 1,
+			thermometer: 1
+		}
+	}, {
+		id: "bldWTT",
+		skills: {
+			carpentry: 4,
+			woodTreatment: 1
+		},
+		materials: {
+			copperStrap: 25,
+			glassPipe: 35,
+			steel: 20,
+			thermometer: 1
+		}
+	}, {
+		id: "bldBeerKettle",
+		skills: {
+			beerBrewing: 1
+		},
+		materials: {
+			brassPot: 1,
+			coppersheeting: 4
+		}
+	}, {
+		id: "bldChurn",
+		skills: {
+			cheesemaking: 1
+		},
+		materials: {
+			barrelTap: 1,
+			boards: 50,
+			copperStrap: 3,
+			wood: 5
+		}
+	}, {
+		id: "bldCreamery",
+		skills: {
+			cheesemaking: 1,
+			cooking: 0
+		},
+		materials: {
+			wood: 200,
+			steel: 15,
+			copperPot: 3,
+			bricks: 500,
+			linen: 4,
+			pulley: 2,
+			rope: 5,
+			barrelTap: 2
+		}
+	}, {
+		id: "bldDryRack",
+		skills: {
+			flaxprocessing: 0
+		},
+		materials: {
+			boards: 18
+		}
+	}, {
+		id: "bldFlaxHmk",
+		skills: {
+			flaxprocessing: 1
+		},
+		materials: {
+			boards: 8,
+			canvas: 2,
+			rope: 4
+		}
+	}, {
+		id: "bldImpBR",
+		skills: {
+			advancedBrickFabrication: 1
+		},
+		materials: {
+			boards: 18,
+			nails: 36
+		}
+	}, {
+		id: "bldWarehouse",
+		skills: {
+			carpentry: 2
+		},
+		materials: {
+			boards: 100,
+			bricks: 1000,
+			cutStone: 10,
+			smallConstructionSite: 1
+		}
+	}, {
+		id: "bldWoodPlane",
+		skills: {
+			carpentry: 0
+		},
+		materials: {
+			slateBlade: 1,
+			slate: 4
+		}
+	}, {
+		id: "bldMutagenics",
+		skills: {
+			mutagenics: 0,
+		},
+		materials: {
+			blackRaeliTile: 500,
+			distillationCoil6000: 1,
+			clay: 120,
+			herbseeds: 500,
+			mirrors: 6,
+			resin: 5000,
+			thermometer: 3
+		}
+	}, {
+		id: "bldAcousticLab",
+		skills: {
+			crystalAcoustics: 0
+		},
+		materials: {
+			steelSheeting: 50,
+			steelWire: 25,
+			cutStone: 25,
+			rigidFireproofBoards: 700,
+			hardFireproofBoards: 400,
+			softPliableBoards: 600,
+			hardPliableBoards: 550,
+			blackRaeliTile: 500,
+			whiteRaeliTile: 500,
+			woolCloth: 150,
+			concrete: 250
+		}
+	}, {
+		id: "bldHexaTablet",
+		skills: {
+			testHexaglyphs: 1
+		},
+		materials: {
+			hileChevronTurquoise: 2,
+			boards: 700,
+			ironbar: 25,
+			ironStrap: 5,
+			linen: 100,
+			mandibularGlue: 25,
+			metalBlueWire: 100,
+			nails: 343,
+			paint: 100,
+			slate: 100
 		}
 	}, {
 		id: "bldSmallDistaff",
