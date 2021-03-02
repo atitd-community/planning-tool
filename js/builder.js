@@ -77,7 +77,8 @@
 			id: "carpentryCat",
 			buildings: [
 				{ id: "bldCarpShop" },
-				{ id: "bldCraftingBench" }
+				{ id: "bldCraftingBench" },
+				{ id: "bldAutoSawmill" }
 			]
 		}, {
 			name: "Cooking",
@@ -107,7 +108,8 @@
 				{ id: "bldHacklingRake" },
 				{ id: "bldImpHR" },
 				{ id: "bldSteamDistaff" },
-				{ id: "bldLrgDistaff" }
+				{ id: "bldLrgDistaff" },
+				{ id: "bldFlaxGin" }
 			]
 		}, {
 			name: "Farming",
@@ -247,6 +249,13 @@
 		width: 3,
 		height: 3,
 		colour: "#730000",
+		t9: 1
+	}, {
+		name: "Automatic Sawmill",
+		id: "bldAutoSawmill",
+		width: 12,
+		height: 19,
+		colour: "#2052b0",
 		t9: 1
 	}, {
 		name: "Chest",
@@ -802,6 +811,13 @@
 		colour: "#ccc566",
 		t9: 1
 	}, {
+		name: "Flax Gin",
+		id: "bldFlaxGin",
+		width: 15,
+		height: 24,
+		colour: "#6d87b9",
+		t9: 1
+	},{
 		name: "Large Corner",
 		id: "bldLrgCorner",
 		width: 5,
@@ -894,6 +910,129 @@
 		},
 		materials: {
 			boards: 24
+		}
+	}, {
+		id: "bldFlaxComb",
+		materials: {
+			boards: 18,
+			bricks: 36,
+			thorns: 60
+		}
+	}, {
+		id: "bldHandLoom",
+		skills: {
+		clothwork: 3
+		},
+		materials: {
+			boards:  4,
+			loomframe: 2,
+		}
+	}, {
+		id: "bldImpHR",
+		skills: {
+			flaxprocessing:  3
+		},
+		materials: {
+			hardRotproofBoards: 18,
+			bricks: 36,
+			nails: 60
+		}
+	}, {
+		id: "bldLrgDistaff",
+		skills: {
+			flaxprocessing: 2
+		},
+		materials: {
+			boards: 12,
+			claybricks: 200,
+			concrete: 200,
+			coppersheeting: 2,
+			wood: 10
+		}
+	}, {
+		id: "bldSteamDistaff",
+		skills: {
+			steamMechanics: 2
+		},
+		materials: {
+			hardRigidFireproofBoards: 2000,
+			lubricatingOil: 20,
+			mediumSteamEngine: 1,
+			ironbar: 50,
+			ironMediumGears: 5,
+			brassSmallGear: 100,
+			ironLargeGear: 10,
+			bolt: 100,
+			washer: 100,
+			water: 1500,
+			thermometer: 10,
+			octecAlloyCable: 15,
+			concrete: 2000,
+			copperPipe: 35
+		}
+	}, {
+		id: "bldCarpShop",
+		skills: {
+			carpentry: 1
+		},
+		materials: {
+			boards: 60,
+			bricks: 36,
+			rope: 2,
+			slate: 8
+		}
+	}, {
+		id: "bldCraftingBench",
+		skills: {
+			carpentry: 1
+		},
+		materials: {
+			boards: 100
+		}
+	}, {
+		id: "bldAutoSawmill",
+		skills: {
+			carpentryAutomation: 0
+		},
+		materials: {
+			brassSmallGear: 12,
+			symmetryAmethyst: 2,
+			symmetrySunstone: 2,
+			cutStone: 30,
+			ironLargeGear: 2,
+			ironMediumGears: 4,
+			islandBlueMarble: 1,
+			pinchRollers: 4,
+			blackRaeliTile: 250,
+			whiteRaeliTile: 250,
+			steelBlades: 12,
+			steelWire: 50
+		}
+	}, {
+		id: "bldStudentLoom",
+		skills: {
+			clothwork: 0
+		},
+		materials: {
+			boards: 8,
+			twine: 120
+		}
+	}, {
+		id: "bldFlaxGin",
+		skills: {
+			flaxAutomation: 0,
+			flaxprocessing: 3,
+		},
+		materials: {
+			bearings: 20,
+			claybricks: 800,
+			flystone: 8,
+			fullEyeSunstone: 2,
+			leather: 2,
+			oil: 150,
+			papyrusBasket: 4,
+			rope: 60,
+			brassSmallGear: 40
 		}
 	}, {
 		id: "chest",
@@ -1072,7 +1211,7 @@
 	}, {
 		id: "bldSturdyTub",
 		skills: {
-			cooperage: 0
+			cooperage: 1
 		},
 		materials: {
 			bricks: 240,
@@ -1082,7 +1221,7 @@
 	}, {
 		id: "bldMarbleTub",
 		skills: {
-			cooperage: 0
+			cooperage: 2
 		},
 		materials: {
 			tar: 20,
@@ -1147,6 +1286,217 @@
 			nails: 60
 		}
 	}, {
+		id: "bldAntColony",
+		skills: {
+			myrmecology: 1
+		},
+		materials: {
+			nontoxicTermiteresistantBoards: 75,
+			clay: 100,
+			dirt: 100,
+			ironbar: 4,
+			redSand: 100,
+			sand: 100,
+			sheetGlass: 4,
+			thermometer: 1,
+			whiteSand: 100
+		}
+	}, {
+		id: "bldGrainOven",
+		skills: {
+			farming: 2
+		},
+		materials: {
+			copperwire: 45,
+			firebricks: 120,
+			slate: 40
+		}
+	}, {
+		id: "bldLargeCheeseRack",
+		skills: {
+			cheesemaking: 1
+		},
+		materials: {
+			boards: 200,
+			nails: 30,
+			rope: 10
+		}
+	}, {
+		id: "bldMaltingTray",
+		skills: {
+			farming: 2
+		},
+		materials: {
+			boards: 8,
+			papyrusPaper: 20
+		}
+	}, {
+		id: "bldPapyTank",
+		skills: {
+			hydroponics: 0
+		},
+		materials: {
+			dirt: 77,
+			sand: 77,
+			sheetGlass: 15,
+			silt:  77,
+			water: 100
+		}
+	}, {
+		id: "bldRabbitHutch",
+		skills: {
+			animalHusbandry: 1,
+			structuralPottery: 0,
+			pottery: 3
+		},
+		materials: {
+			boards: 200,
+			clayDome: 1,
+			dirt: 1000,
+			straw: 200
+		}
+	}, {
+		id: "bldSilkwormFarm",
+		skills: {
+			entomology: 2
+		},
+		materials: {
+			paleTurquoisePaint: 20,
+			turquoisePaint:  20,
+			coppersheeting: 10,
+			iron: 50,
+			papyrusPaper: 25,
+			sheetGlass: 50,
+			thermometer: 1,
+			nontoxicBoards: 200
+		}
+	}, {
+		id: "bldTerrarium",
+		skills: {
+			entomology: 0
+		},
+		materials: {
+			boards: 50,
+			dirt: 100,
+			linen: 3,
+			sheetGlass: 12
+		}
+	}, {
+		id: "bldSmallCheeseRack",
+		skills: {
+			cheesemaking: 0
+		},
+		materials: {
+			boards: 60,
+			nails: 16,
+			rope: 10
+		}
+	}, {
+		id: "bldGloryHole",
+		skills: {
+			glassblowing: 2
+		},
+		materials: {
+			copperStrap: 2,
+			cutStone: 40,
+			firebricks: 600,
+			ironbar: 1,
+			steelSheeting: 20
+		}
+	}, {
+		id: "bldBoxKiln",
+		skills: {
+			kilnconstruction: 0
+		},
+		materials: {
+			brick: 36
+		}
+	}, {
+		id: "bldPotteryDeck",
+		skills: {
+			structuralPottery: 0,
+			pottery: 3
+		},
+		materials: {
+			bearings: 200,
+			boards: 240,
+			flystone: 60,
+			limestone: 500,
+			oil: 300
+		}
+	}, {
+		id: "bldPotteryWheel",
+		skills: {
+			pottery: 1
+		},
+		materials: {
+			boards: 12,
+			bricks: 48,
+			flystone: 1,
+			leather:  1,
+			oil: 4,
+			rope: 4
+		}
+	}, {
+		id: "bldReinforcedKiln",
+		skills: {
+			kilnconstruction: 23
+		},
+		materials: {
+			cutStone: 50,
+			firebricks: 1000,
+			serpentineMarble: 4,
+			insulativeStainlessSunSteelSheeting: 10
+		}
+	}, {
+		id: "bldSteamKiln",
+		skills: {
+			steamMechanics: 2
+		},
+		materials: {
+			claybricks: 5000,
+			claySteepWoolCloth: 200,
+			concrete: 500,
+			copperPipe: 25,
+			firebricks: 2000,
+			random3outputGearbox: 1,
+			lubricatingOil: 20,
+			mediumSteamEngine: 1,
+			plaster: 500,
+			water: 500,
+			hardRigidFireproofBoards: 2000
+		}
+	}, {
+		id: "bldVaultKiln",
+		skills: {
+			kilnconstruction: 2
+		},
+		materials: {
+			claybricks: 1000,
+			firebricks: 15000,
+			sheetGlass: 50,
+			thermometer: 3
+		}
+	}, {
+		id: "bldBarrelVise",
+		skills: {
+			cooperage: 3,
+		},
+		materials: {
+			brassPlate: 2,
+			coppersheeting: 6
+		}
+	}, {
+		id: "bldWineBarrel",
+		skills: {
+			viticulture: 0
+		},
+		materials: { 
+			boards: 6,
+			nails: 50,
+			smallBarrels: 1
+		}
+	}, {
 		id: "bldKettle",
 		skills: {
 			cooking: 0
@@ -1154,6 +1504,13 @@
 		materials: {
 			ironpot: 1,
 			sheetingCopper: 4
+		}
+	}, {
+		id: "bldSmallDistaff",
+		materials: {
+			boards: 12,
+			bricks: 100,
+			wood: 10
 		}
 	}];
 
