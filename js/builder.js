@@ -30,7 +30,7 @@
 		],
 		baseWidth: 3,
 		baseHeight: 2,
-		baseMaxSize: 49,
+		baseMaxSize: 200,
 		materials: {
 			boards: 100,
 			bricks: 200
